@@ -145,7 +145,7 @@ function updateCart() {
         cartItemsContainer.innerHTML = `
         <div class="empty-cart">
             <img src="images/illustration-empty-cart.svg" alt="empty cart">        
-            <p>Your added items will appear hear</p>
+            <p>Your added items will appear here</p>
         
         </div>
         `
