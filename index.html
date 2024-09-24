@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Product WithCArt</title>
+</head>
+<body>
+    <header>
+        <h1>Dessert</h1>
+    </header>
+    <main class="everything">
+         <section class="food-side" > 
+         </section>
+         
+               
+      <!-- Cart Side -->
+        <aside>
+                <div class="cart-summary">
+
+                  <h3>Your Cart (<span id="total-quantity">0</span>)</h3>
+                  <div id="cart-items"></div> <!-- Cart items will be shown here -->
+                  <div class="total">
+                    <span>Order Total: $</span><span id="cart-total">0.00</span>
+                  </div>
+                  <div id="carbon-stuff" class="carbon-stuff">
+                    <img src="images/icon-carbon-neutral.svg" alt="carbon-neutral image">
+                      <span id="carbonShow">This is a carbon-neutral delivery</span>
+                  </div>
+                  <div class="confirmBtn">
+                      <button id="confirm-order-btn">Confirm Order</button>
+
+                  </div>
+              </div>
+        </aside>
+    </main>
+
+    <!-- Pop-up Modal -->
+     <div id="order-modal" class="modal noShow">
+        <div class="modal-content">
+            <img src="images/icon-order-confirmed.svg" alt="order confirmed">
+            <h2>Order Confirmed</h2>
+            <p>We hope you enjoy your food!</p>
+            <div class="orderDetails" id="order-details"></div>
+            <div class="newBtn">
+                <button id="new-order-btn">Start New Order</button>
+            </div>
+            <button id="continue-shopping-btn" class="btn">Continue Shopping</button>
+        </div>
+
+     </div>
+
+     
+     <div id="modal-overlay" class="modal-overlay noLay"></div>
+<script src="script.js"></script>
+</body>
+</html>

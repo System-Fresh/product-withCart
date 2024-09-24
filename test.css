@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+body{
+    font-family: "Red Hat Text", system-ui;
+    font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+header{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.everything{
+    display: flex;
+    background-color: hsl(20, 50%, 98%);
+}
+.food-side{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.food-con{
+    display: flex;
+    flex-direction: column;
+}
+.img-cart{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+   
+
+}
+
+.img-cart img{
+    border: none;
+    /* border: 3px solid red; */
+    border-radius: 20px;
+}
+
+img.bordered{
+    border: 3px solid red;
+}
+
+.cart-container {
+  display: inline-block;
+  position: relative;
+  align-self: center;
+  margin-top: -1rem;
+  
+  
+  
+  
+}
+
+/* Initially hide the quantity buttons */
+.hidden {
+  display: none;
+}
+
+
+.add-to-cart {
+  background-color: #fff;
+  color: black;
+  border: 1px solid hsl(14, 86%, 42%);
+  border-radius: 25px;
+  padding: 10px 40px 10px;
+  cursor: pointer;
+  
+  
+  /* line-height: 20px; */
+}
+.add-to-cart::before{
+      content: url('/images/icon-add-to-cart.svg');
+}
+
+.cart-quantity {
+     background-color: hsl(14, 86%, 42%);
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 30px 10px;
+ 
+  
+}
+
+.cart-quantity .button {
+  /* background-color: #f1f1f1; */
+  border: 1px solid #fff;
+  /* padding: 10px; */
+  border-radius: 80%;
+  cursor: pointer;
+}
+
+.cart-quantity span {
+  padding: 0 10px;
+}
+.p-cart{
+    color:  hsl(7, 20%, 60%);
+}
+.p-name{
+    font-weight: 700;
+}
+
+.price{
+    color: hsl(14, 86%, 42%);
+    font-weight: 400;
+}
+
+/* Cart Side */
+
+.cart-summary{
+    width: 350px;
+    background-color: #fff;
+    padding: 1rem ;
+    border: 1px solid #ddd;
+}
+
+.cart-summary h3{
+    color:  hsl(14, 86%, 42%);
+
+}
+
+.cart-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.item-quant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sQuant{
+    color: hsl(14, 86%, 42%);
+}
+
+.pQuant{
+    color:  hsl(7, 20%, 60%);
+}
+
+.iQuant{
+    color: hsl(12, 20%, 44%);
+    font-weight: 500;
+}
+
+.remove-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cartName{
+    font-weight: 500;
+}
+
+.total{
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.confirmBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#confirm-order-btn {
+    display: none; /* By default, hidden */
+    background-color: hsl(14, 86%, 42%);
+    color: #fff;
+    width: 80%;
+    padding: 0.4rem;
+    border-radius: 17px;
+}
+#confirm-order-btn:hover{
+ 
+    cursor: pointer;
+}
+.carbon-stuff{
+    background-color: hsl(20, 50%, 98%);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#carbon-stuff{
+    display: none;
+}
+
+/* Pop-up Modal */
+
+.modal.noShow{
+    display: none;
+}
+
+.modal{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    /* text-align: center; */
+}
+
+ .orderDetails{
+  background-color: hsl(20, 50%, 98%);
+  padding: 1rem;
+ }
+
+#order-details img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.newBtn{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#new-order-btn{
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: hsl(14, 86%, 42%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+   
+   
+}
+
+#continue-shopping-btn{
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+#continue-shopping-btn:hover{
+    cursor: pointer;
+}
+
+.modal-popUp{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+}
+
+.mItemTotal{
+    /* display: flex; */
+    margin-left: 10rem;
+}
+.modalTotal{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+/* Overlay for modal background */
+/* .modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+} */
+
+.noLay{
+    display: none;
+}
+
+.empty-cart p{
+    text-align: center;
+    color: hsl(7, 20%, 60%);
+}
+
