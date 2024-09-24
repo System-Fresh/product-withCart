@@ -144,7 +144,7 @@ function updateCart() {
         // if the cart is empty, show the empty cart message with an image
         cartItemsContainer.innerHTML = `
         <div class="empty-cart">
-            <img src="images/illustration-empty-cart.svg">        
+            <img src="images/illustration-empty-cart.svg" alt="empty cart">        
             <p>Your added items will appear hear</p>
         
         </div>
